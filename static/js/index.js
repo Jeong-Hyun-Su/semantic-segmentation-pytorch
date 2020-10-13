@@ -7,7 +7,7 @@ function formSend() {
     // Image, Version 선택
     const image = document.getElementById('image').files[0];
 
-    formData.append("img", image);
+    formData.append("image", image);
     
     fetch(
         '/segmentation',
