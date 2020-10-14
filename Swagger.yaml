@@ -1,0 +1,49 @@
+openapi: 3.0.1
+
+info:
+  title: Semantic-Segmentation
+  description: |
+    It is separated according to each instance in the photo.
+    ---
+      How to use:
+      1.  Upload an image file you want to segmentation.
+      2.  Press the Submit Button and wait for the result.
+  contact:
+    name: Ainizer - HyunSu Jeong
+  version: "0.1"
+
+servers:
+  - url: https://master-semantic-segmentation-pytorch-jeong-hyun-su.endpoint.ainize.ai/
+
+paths:
+  /segmentation:
+    post:
+      requestBody:
+        required: true
+        description: "It is separated according to each instance in the photo."
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                image:
+                  type: string
+                  format: binary
+            encoding:
+              files:
+                contentType: image/*
+
+      responses:
+        '200':
+          description: success
+          content:
+            image/jpg:
+              schema:
+                type: string
+                format: binary
+
+        '400':
+          description: Bad Request
+
+        '500':
+          description: Server side error
