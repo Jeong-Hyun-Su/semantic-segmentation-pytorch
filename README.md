@@ -1,6 +1,6 @@
 # Semantic Segmentation on MIT ADE20K dataset in PyTorch
 
-[![Run on Ainize](https://ainize-dev.herokuapp.com/images/run_on_ainize_button.svg)](https://ainize-dev-1.web.app/redirect?git_repo=https://github.com/Jeong-Hyun-Su/semantic-segmentation-pytorch)
+[![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/Jeong-Hyun-Su/semantic-segmentation-pytorch)
 
 This is a PyTorch implementation of semantic segmentation models on MIT ADE20K scene parsing dataset (http://sceneparsing.csail.mit.edu/).
 
